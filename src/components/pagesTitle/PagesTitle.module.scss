@@ -1,0 +1,19 @@
+.pagesTitle {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    font-family: var(--font-bebas);
+    color: var(--color-white);
+}
+.pagesTitleWrapp{
+    margin-top: 48px;
+}
+.title {
+    margin-top: 64px;
+    font-size: 60px;
+}
+.page {
+    color: var(--color-caramel);
+    font-family: var(--font-inter);
+
+}

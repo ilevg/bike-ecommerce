@@ -1,0 +1,10 @@
+{
+    "newsletterSubscriptions": [
+      {
+        "subscriptionId": 1,
+        "userId": 3,
+        "email": "user3@example.com",
+        "subscribedAt": "2022-02-01T10:00:00.000Z"
+      }
+    ]
+  }
