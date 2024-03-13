@@ -12,7 +12,6 @@ const SliderSimple = ({ itemsList, SliderItemComponent }) => {
         slidesToShow: 1.1,
         slidesToScroll: 1
     };
-    console.log()
     return (
         <div className="slider-container">
             <Slider {...settings}>

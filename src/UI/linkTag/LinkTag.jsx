@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import styles from './LinkTag.module.scss'
 
 
-const LinkTag = ({to, text, color}) => {
-  
+const LinkTag = ({ to, text, color }) => {
+
   const linkClasses = classNames(styles.link, {
     [styles.black]: color === 'black',
     [styles.white]: color === 'white',
@@ -13,7 +13,9 @@ const LinkTag = ({to, text, color}) => {
   })
 
   return (
-    <Link className={linkClasses} to={to}>{text}</Link>
+    <Link className={linkClasses} to={to}>
+        {text}
+    </Link>
   )
 }
 

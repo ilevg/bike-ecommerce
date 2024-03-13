@@ -1,0 +1,26 @@
+.galeryDescWrapp {
+    display: flex;
+}
+.galeryDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    margin-right: 45px;
+    font-family: var(--font-inter);
+    line-height: 160%;
+
+}
+.galeryHelp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.galeryHelp span {
+    margin-left: 30px;
+}
+.galeryHelpSubtitle {
+    font-size: var(--font-size-h4);
+}
+.galeryDescImg {
+    width: 50%;
+}

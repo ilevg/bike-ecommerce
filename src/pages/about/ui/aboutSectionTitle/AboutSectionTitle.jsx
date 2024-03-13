@@ -4,7 +4,7 @@ import styles from './AboutSectionTitle.module.scss'
 
 const AboutSectionTitle = ({titleText}) => {
     return (
-        <div className={styles.homeSectionTitle}>
+        <div className={styles.aboutSectionTitle}>
             <SectionTitle titleText={titleText} />
         </div>
     )

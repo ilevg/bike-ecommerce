@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import navIcons from '../constants/navIcons'
 import styles from './Header.module.scss'
@@ -6,11 +6,10 @@ import logo from '../constants/logo'
 import { fetchNavLinks } from '../../services/apiService'
 import LinkTag from '../../UI/linkTag/LinkTag'
 import Sidebar from './components/sidebar/Sidebar'
-
 import BurgerIcon from '../../assets/img/icons/burger-icon.png'
-import { useEffect } from 'react'
 
-const navLinks = await fetchNavLinks()
+const { data } = await fetchNavLinks()
+const navLinks = data.header.headerMenuItems
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -48,9 +47,9 @@ const Header = () => {
             </Link>
 
             <ul className={styles.headerList}>
-              {navLinks.map(({ linkRef, linkText }) => {
-                return <li key={linkRef}>
-                  <LinkTag to={linkRef} text={linkText}></LinkTag>
+              {navLinks.map(({ID ,url, title }) => {
+                return <li key={ID}>
+                  <LinkTag to={url} text={title}></LinkTag>
                 </li>
               })}
             </ul>

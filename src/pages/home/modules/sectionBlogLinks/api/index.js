@@ -1,5 +1,3 @@
-import { fetchData } from '../../../../../services/apiService'
-
-const fetchBlogPosts = () => fetchData('/blogPosts')
+import {fetchBlogPosts} from '../../../../../services/apiService'
 export const blogPostsList = await fetchBlogPosts()
 

@@ -5,6 +5,7 @@ import styles from './SectionContact.module.scss'
 import mail from '../../../../assets/img/footer/mail.png'
 import phone from '../../../../assets/img/footer/phone.png'
 import navigator from '../../../../assets/img/footer/navigator.png'
+import GoogleMap from '../../../../UI/googleMap/GoogleMap'
 
 
 const SectionContact = () => {
@@ -13,15 +14,7 @@ const SectionContact = () => {
             <div className="container">
                 <HomeSectionTitle titleText='contact' />
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.5610513692445!2d-0.14353338687849773!3d51.54539567858985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ae2989f1b99%3A0x506c6806cea82bb9!2s147%20Kentish%20Town%20Rd%2C%20London%20NW1%208PR%2C%20UK!5e1!3m2!1sen!2spl!4v1706894215511!5m2!1sen!2spl"
-                width="100%"
-                height="500"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+            <GoogleMap />
             <div className="container">
                 <ul className={styles.contactList}>
                     <li className={styles.contantListItem}>

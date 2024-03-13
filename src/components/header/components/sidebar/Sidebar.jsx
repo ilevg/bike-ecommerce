@@ -5,24 +5,16 @@ import DropdownField from '../../../../UI/dropdownField/DropdownField'
 import { fetchNavLinks } from '../../../../services/apiService'
 import logo from '../../../../assets/img/logo/logo-black.png'
 
-const navLinks = await fetchNavLinks()
+const { data } = await fetchNavLinks()
+const navLinks = data.header.headerMenuItems
 
-const renderListLinks = (subcategories) => (
-    subcategories && subcategories.map((subcategory) => (
-        <li key={subcategory}>
-            <LinkTag to='/' text={subcategory} color='gray' />
+const renderListLinks = (children) => (
+    children && children.map((subcategory) => {
+       return <li key={subcategory.ID}>
+            <LinkTag to={subcategory.url} text={subcategory.title} color='gray' />
         </li>
-    ))
-) 
-
-// const renderListLinks = () => (
-//     <li>
-//         <input type="range" id="range" name="range"></input>
-//         <label htmlFor="range">"range"</label>
-//     </li>
-// )
-
-
+    })
+)
 
 const Sidebar = ({ isOpen, menuToggle }) => {
     const classToogle = isOpen ? `${styles.sidebarWrapper} ${styles.fadeIn}` : `${styles.sidebarWrapper} ${styles.fadeOut}`

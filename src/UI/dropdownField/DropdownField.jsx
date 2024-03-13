@@ -21,21 +21,21 @@ const DropdownField = ({ navLinks, renderChildren }) => {
     }
 
     const renderSubcategory = (link, index) => {
-        const { linkText, subcategories } = link
+        const { title, children } = link
         return (
-            < li className={styles.navMobItem} key={linkText}>
+            < li className={styles.navMobItem} key={index}>
                 <ul
                     className={isOpenState[index] ? `${styles.navMobSubcategory} ${styles.subcategoryActive}` : styles.navMobSubcategory}
                     onClick={() => dropdownToggle(index)}
-                    key={linkText}
+                    key={index}
                 >
-                    <li>{linkText}</li>
+                    <li>{title}</li>
                     <li className={styles.navMobArrows}>{isOpenState[index] ? 'ᐱ' : 'ᐯ'}</li>
                 </ul>
 
                 {(
                     <ul className={isOpenState[index] ? `${styles.navMobLinks} ${styles.navMobOpen}` : `${styles.navMobLinks} ${styles.navMobClose}`}>
-                        {subcategories && subcategories.length > 0 ? renderChildren(subcategories) : renderChildren()}
+                        {children && children.length > 0 ? renderChildren(children) : renderChildren()}
                     </ul>
                 )}
 

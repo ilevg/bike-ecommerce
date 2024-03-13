@@ -11,7 +11,8 @@ import { fetchNavLinks } from '../../services/apiService'
 import LinkTag from '../../UI/linkTag/LinkTag'
 import classNames from 'classnames'
 
-const navLinks = await fetchNavLinks()
+const { data } = await fetchNavLinks()
+const navLinks = data.header.headerMenuItems
 
 const Footer = () => {
   return (
@@ -45,9 +46,9 @@ const Footer = () => {
               <div className={classNames(styles.footerLinksWrapper, styles.footerLinksFirst)}>
                 <h4 className={styles.footerLinksTitle}>Catalog</h4>
                 <ul className={styles.footerLinksList}>
-                  {navLinks.map(({ linkRef, linkText }) => {
-                    return <li key={linkRef}>
-                      <LinkTag to={linkRef} text={linkText} color=''></LinkTag>
+                  {navLinks.map(({ ID ,url, title }) => {
+                    return <li key={ID}>
+                      <LinkTag to={url} text={title} color=''></LinkTag>
                     </li>
                   })}
                 </ul>

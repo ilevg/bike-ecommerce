@@ -59,14 +59,14 @@ const Terms = () => {
                     <p>
                         <strong>4.1. Ordering the Goods is carried out by the Buyer through the Operator by phone: +7(495)055-75-86</strong> or through the service of the website of the online store http://world-bike.ru/
                     </p>
-                    <p>
+                    <div>
                         <strong>4.2. When registering on the website of the online store, the Buyer undertakes to provide the following registration information:</strong>
                         <ul>
-                            <li>Last name, first name, patronymic of the Buyer or the person indicated by him (recipient);</li>
-                            <li>Address to which the Goods should be delivered (if delivery to the Buyer's address);</li>
-                            <li>Email address;</li>
+                            <li> - Last name, first name, patronymic of the Buyer or the person indicated by him (recipient);</li>
+                            <li> - Address to which the Goods should be delivered (if delivery to the Buyer's address);</li>
+                            <li> - Email address;</li>
                         </ul>
-                    </p>
+                    </div>
                     <p>
                         <strong>4.3. Acceptance by the Buyer of the terms of this Offer is carried out by the Buyer entering the corresponding data into the registration form on the website of the online store</strong> or when placing an Order through the Operator. After placing the Order through the Operator, the Buyer's data is registered in the Seller's database. After confirming the Order of the selected Goods, the Buyer provides the Operator with the necessary information in accordance with the procedure specified in clause 4.2. of this Offer.
                     </p>

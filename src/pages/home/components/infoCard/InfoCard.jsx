@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './InfoCard.module.scss'
 
 const InfoCard = ({item, bgColor}) => {
-    console.log(item)
     return (
         <div className={`${styles.infoCard} ${bgColor ? styles.bgCaramel : ''}`}>
             <div className={styles.infoCardTitleWrapp}>

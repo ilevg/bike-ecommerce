@@ -1,8 +1,11 @@
 import axios from 'axios';
 
+
+const wordpressSiteUrl = process.env.REACT_APP_WORDPRESS_SITE_URL;
+
 const instance = axios.create({
-  baseURL: 'http://localhost:4000', // Установите ваш базовый URL
-  timeout: 5000, // Установите таймаут запроса (в миллисекундах)
+  baseURL: wordpressSiteUrl,
+  timeout: 10000, // Установите таймаут запроса (в миллисекундах)
   headers: {
     'Content-Type': 'application/json',
   },

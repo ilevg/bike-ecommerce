@@ -5,13 +5,9 @@ import titleBgImage from '../../assets/img/titlesBg/about.png'
 import BrandCarousel from '../../UI/brandCarousel/BrandCarousel'
 import classNames from 'classnames'
 import SectionTitle from '../../UI/sectionTitle/SectionTitle'
-
-import {fetchPayInfo, fetchDeliveryInfo} from '../../services/apiService'
 import DropdownField from '../../UI/dropdownField/DropdownField'
 
-const payInfoList = await fetchPayInfo()
-const deliveryInfo = await fetchDeliveryInfo()
-
+import { deliveryInfo, payInfo } from './data'
 
 const renderPayInfo = (subcategories) => (
     subcategories && subcategories.map((subcategory) => (
@@ -46,7 +42,7 @@ const DeliveryPay = () => {
                 </div>
                 
                 
-                <DropdownField navLinks={payInfoList} renderChildren={renderPayInfo} />
+                <DropdownField navLinks={payInfo} renderChildren={renderPayInfo} />
                 <div className={styles.deliveryPayTitle}>
                     <SectionTitle titleText='Pay Information' />
                 </div>

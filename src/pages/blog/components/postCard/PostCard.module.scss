@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 426px;
+    font-family: var(--font-inter);
+    line-height: 160%;
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+.cardDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+.postType {
+    color: var(--color-caramel);
+}
+.cardTitle {
+    font-size:var(--font-size-subtile-sec);
+}

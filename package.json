@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "axios": "^1.6.7",
     "classnames": "^2.5.1",
     "normalize": "^0.3.1",
@@ -23,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compile-scss": "node-sass src/styles.scss -o src",
-    "server-json": "json-server --watch data/bicycles.json --port 4000"
+    "server-json": "json-server --watch data/bicycles.json --port 5000"
   },
   "eslintConfig": {
     "extends": [

@@ -94,6 +94,12 @@
     line-height: 123%;
     /* 19.68px */
 }
+.cardPriceReg {
+    padding-left: 10px;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: var(--color-light-gray);
+}
 
 .cardBtn {
     height: 0px;

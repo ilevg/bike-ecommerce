@@ -1610,7 +1610,7 @@
       ]
     }
   ],
-  "blogPosts": [
+  "blogPost": [
     {
       "id": "1",
       "title": "Extreme Mountain bike driving",
@@ -1632,82 +1632,339 @@
       "link": "/"
     }
   ],
-  "contactQuestions": [
+  "blogPosts": [
     {
       "id": "1",
-      "linkRef": "/catalog",
-      "linkText": "Will I receive the same product as in the picture?",
-      "subcategories": ["Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et."]
+      "date": "2024-01-30",
+      "postType": "review",
+      "title": "Extreme Mountain bike driving",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
       "id": "2",
-      "linkRef": "/catalog",
-      "linkText": "Where can I view the sales receipt?",
-      "subcategories": ["Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et."]
+      "date": "2022-01-30",
+      "postType": "news",
+      "title": "Pinarello's new Dogma",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
       "id": "3",
-      "linkRef": "/catalog",
-      "linkText": "How can I return the product?",
-      "subcategories": ["Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et."]
+      "date": "2020-01-30",
+      "postType": "review",
+      "title": "Bike driving",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
-      "id": "4",
-      "linkRef": "/catalog",
-      "linkText": "Will you restock items marked as out of stock?",
-      "subcategories": ["Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et."]
-    }
-  ],
-  "payInfo": [
-    {
       "id": "1",
-      "linkRef": "/catalog",
-      "linkText": "Delivery throughout London",
-      "subcategories": ["Orders worth up to 20 thousand rubles — $ 50", "Заказы стоимостью более 20 тыс. ₽ — Бесплатно.", "The delivery of oversized goods is calculated separately."]
+      "date": "2024-01-30",
+      "postType": "review",
+      "title": "Extreme Mountain bike driving",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
       "id": "2",
-      "linkRef": "/catalog",
-      "linkText": "Delivery near London (50km)",
-      "subcategories": ["Orders worth up to 20 thousand rubles — $ 150", "Orders worth more than $ 5 thousand  are free of charge.", "The delivery of oversized goods is calculated separately."]
+      "date": "2022-01-30",
+      "postType": "news",
+      "title": "Pinarello's new Dogma",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
       "id": "3",
-      "linkRef": "/catalog",
-      "linkText": "Delivery near London (50km)Delivery throughout the United Kingdom",
-      "subcategories": ["Orders worth up to 20 thousand rubles — $ 150", "Orders worth more than $ 5 thousand  are free of charge.", "The delivery of oversized goods is calculated separately."]
+      "date": "2020-01-30",
+      "postType": "review",
+      "title": "Bike driving",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
-      "id": "4",
-      "linkRef": "/catalog",
-      "linkText": "Shop — pick-up point in London",
-      "subcategories": ["Orders worth up to 20 thousand rubles — $ 150", "Orders worth more than $ 5 thousand  are free of charge.", "The delivery of oversized goods is calculated separately."]
-    }
-  ],
-  "deliveryInfo": [
-    {
       "id": "1",
-      "linkRef": "/catalog",
-      "linkText": "Will I receive the same product as in the picture?",
-      "subcategories": ["Cash payment is made upon direct delivery to the courier or in advance in our store. Addresses: London, Dovator str., 7/8 c 1"]
+      "date": "2024-01-30",
+      "postType": "review",
+      "title": "Extreme Mountain bike driving",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
       "id": "2",
-      "linkRef": "/catalog",
-      "linkText": "Where can I view the sales receipt?",
-      "subcategories": ["Cash payment is made upon direct delivery to the courier or in advance in our store. Addresses: London, Dovator str., 7/8 c 1"]
+      "date": "2022-01-30",
+      "postType": "news",
+      "title": "Pinarello's new Dogma",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     },
     {
       "id": "3",
-      "linkRef": "/catalog",
-      "linkText": "How can I return the product?",
-      "subcategories": ["Cash payment is made upon direct delivery to the courier or in advance in our store. Addresses: London, Dovator str., 7/8 c 1"]
-    },
-    {
-      "id": "4",
-      "linkRef": "/catalog",
-      "linkText": "Will you restock items marked as out of stock?",
-      "subcategories": ["Cash payment is made upon direct delivery to the courier or in advance in our store. Addresses: London, Dovator str., 7/8 c 1"]
+      "date": "2020-01-30",
+      "postType": "review",
+      "title": "Bike driving",
+      "link": "/",
+      "banerImg": "/",
+      "linkImg": "/assets/blog/post_1/link-img.png",
+      "bannerDesc": "Pinarello's new Dogma F is a lighter, more responsive and aerodynamic version of their latest F12 road racing motorcycle. And while the overall asymmetrical aerodynamic profile remains definitely familiar with the decades-old Pinarello Dogma curves, the biggest surprise may be that it's not just about the disc brake. While many bicycle manufacturers only use disc brakes, Pinarello professionals continue to win Grand Tours on bicycles with rim brakes, so Dogma F continues to evolve with both rim and disc brakes…",
+      "postContent": [
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        },
+        {
+          "contentTitle": "2022 Pinarello Dogma F изогнутый аэродинамический шоссейный гоночный велосипед из карбона",
+          "imgUrl": "/",
+          "desc": "The shape of the new Pinarello Dogma F road aerodynamic bike does not differ much from the previous Dogma, except for a flatter top and slightly more lowered seat feathers. But interestingly, the license plate has been changed from the most recent Dogma F12 to this new seventh-generation Dogma F, which, according to Pinarello, simplifies the connection of motorcycles with its long past (since 2000) and its 'irrefutable' superiority stretching into the future."
+        }
+      ]
     }
   ]
 }

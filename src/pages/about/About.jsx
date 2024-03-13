@@ -6,15 +6,14 @@ import PagesTitle from '../../components/pagesTitle/PagesTitle'
 import titleBgImage from '../../assets/img/titlesBg/about.png'
 import SectionContact from './sectionContact/SectionContact'
 import SectionMain from './sectionMain/SectionMain'
+import SectionGalery from './sectionGalery/SectionGalery'
 
 const DeliveryPay = () => {
   return (
     <>
       <PagesTitle img={titleBgImage} pageName='About Us' />
-      <div className={styles.about}>
-
-      </div>
       <SectionMain />
+      <SectionGalery />
       <SectionContact />
       <BrandCarousel />
     </>
