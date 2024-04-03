@@ -9,6 +9,7 @@
     transition: height .3s ease, box-shadow .3s ease;
     &:hover {
         height: 441px;
+        z-index: 100;
         transition: height .3s ease, box-shadow .3s ease;
         box-shadow: 
             0px 0px 0px 0px rgba(186, 186, 186, 0.10), 
@@ -29,7 +30,7 @@
 }
 
 .cardFlagImg {
-    position: relative;
+    position: absolute;
     width: 72px;
     height: 38px;
     flex-shrink: 0;
@@ -47,6 +48,8 @@
 }
 
 .cardProductImg {
+    width: 255px;
+    height: auto;
     position: relative;
 }
 
@@ -75,10 +78,9 @@
     /* Limits the display of text to two lines */
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: var(--font-size-subtile-sec);
     line-height: 1.6;
-    letter-spacing: 0.18px;
+    color: var(--color-black);
 }
 
 .cardPrice {
@@ -86,13 +88,8 @@
     top: 330px;
     left: 16px;
     color: var(--2-grey, #777);
-    /* desk mob cta */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
+    font-family: var(--font-inter);
     font-weight: 500;
-    line-height: 123%;
-    /* 19.68px */
 }
 .cardPriceReg {
     padding-left: 10px;
@@ -102,12 +99,10 @@
 }
 
 .cardBtn {
+    width: 270px;
+    margin: 380px auto 0 auto ;
     height: 0px;
     overflow: hidden;
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
     transition: height .3s ease;
     @media (max-width: 768px) {
         height: 57px;

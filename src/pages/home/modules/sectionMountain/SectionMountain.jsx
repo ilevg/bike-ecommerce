@@ -11,7 +11,7 @@ import mountBike from '../../../../assets/img/home/mountains/mountBike.png'
 
 import {mountCardsData} from '../../data/data'
 import InfoCard from '../../components/infoCard/InfoCard'
-import SliderSimple from '../../components/sliderSimple/SliderSimple'
+import SliderSimple from '../../../../components/sliderSimple/SliderSimple'
 
 const SectionMountain = () => {
     return (

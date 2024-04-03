@@ -7,11 +7,11 @@ import logo from '../../assets/img/logo/logo-white.png'
 import phone from '../../assets/img/footer/phone.png'
 import navigator from '../../assets/img/footer/navigator.png'
 import mail from '../../assets/img/footer/mail.png'
-import { fetchNavLinks } from '../../services/apiService'
+import { fetchData } from '../../services/apiService'
 import LinkTag from '../../UI/linkTag/LinkTag'
 import classNames from 'classnames'
 
-const { data } = await fetchNavLinks()
+const { data } = await fetchData('/wp-json/rae/v1/header-footer?header_location_id=hcms-menu-header&footer_location_id=hcms-menu-footer')
 const navLinks = data.header.headerMenuItems
 
 const Footer = () => {

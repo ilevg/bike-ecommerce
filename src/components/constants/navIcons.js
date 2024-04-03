@@ -11,7 +11,7 @@ const navIcons = [
     {
         imgLink: UserIcon,
         alt: 'Login icon',
-        linkRef: '/login'
+        linkRef: '/authentication'
     },
     {
         imgLink: CartIcon,

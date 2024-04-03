@@ -1,0 +1,145 @@
+.checkout {
+    margin: 80px auto;
+}
+
+.details {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.deliveryDetails,
+.payDetails,
+.orderDetails {
+    padding: 40px;
+    border: 1px solid var(--color-lighter-gray);
+    border-radius: 10px;
+}
+
+.deliveryDetails {
+    width: 100%;
+}
+
+.subtitle {
+    margin-bottom: 42px;
+    font-family: var(--font-bebas);
+    font-size: 40px;
+}
+
+.inputsCont {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.input {
+    height: 52px;
+}
+
+.textarea {
+    resize: none;
+}
+
+.textarea,
+.input {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-lighter-gray);
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.payDetails {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: var(--font-inter);
+}
+
+.paySubtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.checkboxLable {
+    color: var(--color-gray);
+    line-height: 160%;
+}
+
+
+
+
+
+.orderDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deliveryInfo {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-inter);
+    width: 346px;
+}
+
+.deliverySubtitle {
+    margin-bottom: 24px;
+    font-size: var(--font-size-h4);
+    font-weight: 500;
+    color: var(--color-caramel);
+}
+
+.infoItemCont {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    width: 346px;
+}
+
+.totalPriceCont {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-subtile);
+    font-weight: 500;
+}
+
+.totalPrice {
+    font-size: var(--font-size-h4);
+}
+
+.termsCont {
+    display: block;
+    margin-top: 8px;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-text-3);
+    line-height: 160%;
+}
+.terms {
+    color: var(--color-caramel);
+}

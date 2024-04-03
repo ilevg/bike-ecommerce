@@ -8,7 +8,7 @@ import SectionContact from './sectionContact/SectionContact'
 import SectionMain from './sectionMain/SectionMain'
 import SectionGalery from './sectionGalery/SectionGalery'
 
-const DeliveryPay = () => {
+const About = () => {
   return (
     <>
       <PagesTitle img={titleBgImage} pageName='About Us' />
@@ -20,4 +20,4 @@ const DeliveryPay = () => {
   )
 }
 
-export default DeliveryPay
+export default About

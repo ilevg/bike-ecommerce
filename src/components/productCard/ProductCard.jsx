@@ -11,9 +11,10 @@ const ProductCard = ({ product }) => {
     const productImg = product.images[0]?.src
 
     const countryAttr = product.attributes.find(attr => attr.name.toLowerCase() === "country")
-    const productCountry = countryAttr.options[0].toLowerCase()
+    const productCountry = countryAttr && countryAttr.options[0].toLowerCase()
     const wordpressSiteUrl = process.env.REACT_APP_WORDPRESS_SITE_URL
-    
+    const stockStatus = product.stock_status === 'instock' ? 'In stock' : 'Sold out'
+
     let flagPath = ''
     switch (productCountry) {
         case 'usa':
@@ -33,14 +34,13 @@ const ProductCard = ({ product }) => {
             break;
     }
 
-
     return (
         <div className={styles.card}>
             <Link to={`/catalog/${product.slug}`}>
                 <img className={`${flagPath ? styles.cardFlagImg : styles.cardFlagImgHidden}`} src={flagPath} />
                 <div className={styles.cardImgWrapper}>
                     <img className={styles.cardProductImg} src={productImg} alt={product.name} />
-                    <span className={styles.cardProductInfo}>{product.stock_status}</span>
+                    <span className={styles.cardProductInfo}>{stockStatus}</span>
                 </div>
                 <div className={styles.cardDesc}>
                     <span className={styles.cardDescText}>{product.name}</span>
@@ -55,7 +55,7 @@ const ProductCard = ({ product }) => {
 
                 <div className={styles.cardBtn} >
                     <Button
-                        width='274px'
+                        width='100%'
                         text='In 1 Click'
                         imgUrl={click}
                         alt='click'

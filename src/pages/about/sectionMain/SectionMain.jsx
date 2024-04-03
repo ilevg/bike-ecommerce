@@ -1,13 +1,15 @@
 import React from 'react'
-import AboutSectionTitle from '../ui/aboutSectionTitle/AboutSectionTitle'
 import styles from './SectionMain.module.scss'
+
+import SliderSimple from '../../../components/sliderSimple/SliderSimple'
 import LinkTag from '../../../UI/linkTag/LinkTag'
 import { mainCardInfo } from './data/MainCardInfo'
 
-import cardBg from '../../../assets/img/about/about-card-bg.png'
 import aboutMainImg from '../../../assets/img/about/about-main-img-bike.png'
+import SliderItem from './components/sliderItem/SliderItem'
 
 
+<SliderSimple />
 const SectionMain = () => {
     return (
         <>
@@ -17,17 +19,15 @@ const SectionMain = () => {
                 <div className={styles.mainCard}>
                     {
                         mainCardInfo.map((item) => (
-                            <div key={item.id} className={styles.card}>
-                                <h3 className={styles.mainCardTitle}>{item.title}</h3>
-                                <p className={styles.mainCardDesc}>{item.desc}</p>
-                                <LinkTag to={item.link} text='More iformation' />
-                                <img className={styles.mainCardBg} src={cardBg} alt="card-bg" />
-                            </div>
+                            <SliderItem key={item.id} item={item} />
                         ))
                     }
                 </div>
             </div>
 
+            <div className={styles.slider}>
+                <SliderSimple itemsList={mainCardInfo} SliderItemComponent={SliderItem} />
+            </div>
             <div className={styles.mainAbout}>
                 <div className={styles.mainAboutItems}>
                     <div className={styles.mainAboutItemsWrapp}>

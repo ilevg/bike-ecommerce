@@ -11,4 +11,7 @@
 }
 .deliveryPayTitle {
     margin: 80px 0 40px 0;
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
 }

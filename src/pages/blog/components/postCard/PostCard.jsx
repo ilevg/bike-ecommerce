@@ -3,15 +3,19 @@ import styles from './PostCard.module.scss'
 import LinkTag from '../../../../UI/linkTag/LinkTag'
 
 const PostCard = ({post}) => {
-    console.log(post.linkImg)
+    const postSlug = post[1]
+    const postDate = post[2]
+    const date = new Date(postDate)
+    const formattedDate = date.toLocaleString();
+
     return (
         <div className={styles.card}>
-            <img src={post.linkImg} alt="img" />
+            <img src={post[0][1].content[1].src} alt={post[0][1].content[1].alt} />
             <div className={styles.cardDesc}>
-                <span>{post.date}</span>
-                <span className={styles.postType}>#{post.postType}</span>
-                <h3 className={styles.cardTitle}>{post.title}</h3>
-                <LinkTag to='/' text='More...' />
+                <span>{formattedDate}</span>
+                <span className={styles.postType}>#rewiev</span>
+                <h3 className={styles.cardTitle}>{post[0][0].content}</h3>
+                <LinkTag to={`/blog/${postSlug}`} text='More...' />
             </div>
         </div>
     )

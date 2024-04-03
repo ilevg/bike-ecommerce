@@ -10,6 +10,9 @@
     a {
         color: rgb(16, 16, 16);
     }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .info {
     margin-right: 100px;
@@ -30,8 +33,12 @@
     margin-top: 16px;
     color: var(--color-black);
     font-weight: 500;
-
+    @media screen and (max-width: 768px) {
+        padding-bottom: 20px;    
+    }
 }
 .tableInfo {
     color: var(--color-black);
+    @media screen and (max-width: 768px) {
+padding-bottom: 10px;    }
 }

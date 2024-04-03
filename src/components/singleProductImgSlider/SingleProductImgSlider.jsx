@@ -1,16 +1,25 @@
-import React, { Component } from "react";
+import React from 'react';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-// import { baseUrl } from "./config";
+import './SingleProductImgSlider.scss'
 
-const SingleProductImgSlider = ( ) => {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const SingleProductImgSlider = ({ productImages }) => {
+    const baseUrl = "http://bike-ecommerce/wp-content/uploads";
+    const productImagesSrc = [...new Set(productImages && productImages.map((image) => image.src))]
+    const images = productImagesSrc?.map((image, index) => (
+        <div key={index}>
+            <img src={image} alt={image} />
+        </div>
+    ));
+
     const settings = {
         customPaging: function (i) {
+            const thumbnail = productImagesSrc[i];
             return (
-                <a>
-                    dsfsdfd
-                    {/* <img src={`${baseUrl}/abstract0${i + 1}.jpg`} /> */}
+                <a className='imgLink'>
+                    <img className='imgMini' src={thumbnail} alt="Product Thumbnail" />
                 </a>
             );
         },
@@ -19,18 +28,17 @@ const SingleProductImgSlider = ( ) => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false
     };
+
     return (
         <div className="slider-container">
-            <Slider {...settings}>
-                <div>
-                    sdfsdf
-                    {/* <img src={baseUrl + "/abstract01.jpg"} /> */}
-                </div>
-            </Slider>
+            {images && images.length > 0 ? (
+                <Slider {...settings}>{images}</Slider>
+            ) : ''}
         </div>
     );
-}
+};
 
-export default SingleProductImgSlider
+export default SingleProductImgSlider;

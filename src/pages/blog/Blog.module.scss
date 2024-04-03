@@ -1,6 +1,9 @@
 .blog {
     margin-top: 48px;
     margin-bottom: 160px;
+    @media (max-width: 1600px) {
+        margin-bottom: 40px;
+    }
 }
 .blogPosts {
     display: flex;

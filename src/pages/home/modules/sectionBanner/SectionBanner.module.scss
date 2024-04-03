@@ -8,6 +8,7 @@
     background-size: cover;
     background-position: center center;
     z-index: -1;
+
     @media (max-width: 992px) {
         height: 650px;
     }
@@ -23,6 +24,7 @@
     color: var(--color-white);
     height: 690px;
     padding-top: 80px;
+
     @media (max-width: 992px) {
         height: 550px;
     }
@@ -36,6 +38,7 @@
     margin: 80px 0 45px 0;
     font-size: var(--font-size-h1);
     font-family: var(--font-bebas);
+
     @media (max-width: 992px) {
         font-size: var(--font-size-h1-mob);
     }
@@ -52,10 +55,27 @@
     letter-spacing: 0.18px;
     font-size: var(--font-size-subtile-sec);
     font-family: var(--font-inter);
+
     @media (max-width: 768px) {
         width: auto;
     }
     @media (max-width: 768px) {
         margin-bottom: 24px;
     }
+}
+
+.link {
+    padding: 16px 43px;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: var(--color-caramel);
+    transition: background-color .3s ease;
+    &:hover {
+        background-color: #ff8935;
+    }
+    &:active {
+        background-color: #E1610C;
+    }
+
 }

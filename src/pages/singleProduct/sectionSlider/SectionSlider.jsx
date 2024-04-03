@@ -7,7 +7,7 @@ const SectionSlider = () => {
     return (
         <div className={styles.slider}>
             <div className="container">
-                <h2>new releases</h2>
+            <h2 className={styles.subtitle}>new releases</h2>
                 <div className={styles.sliderWrapper}>
                     <ProductSlider productList={newProductsList} />
                 </div>

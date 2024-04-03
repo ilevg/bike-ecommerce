@@ -4,6 +4,7 @@
     font-family: var(--font-bebas);
     @media (max-width: 992px) {
         font-size: var(--font-size-h1-mob);
+        margin-top: 40px;
     }
     @media (max-width: 768px) {
         width: auto;
@@ -19,42 +20,23 @@
     justify-content: space-between;
     gap: 40px;
     z-index: -1;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 32px;
-    overflow: hidden;
-    width: 400px;
-    height: 335px;
-    gap: 40px;
-    font-family: var(--font-inter);
-    border-radius: 10px;
-    background-color: var(--color-charcoal);
-    color: var(--color-lighter-gray);
-    &:hover {
-        .mainCardBg {
-            transform: scaleY(1.4);
-            transition: transform .5s ease;
-        }
+    @media (max-width: 992px) {
+        display: none;
     }
 }
-.mainCardTitle {
-    font-size: var(--font-size-h4);
-    color: var(--color-white);
+.slider {
+    @media (min-width: 993px) {
+        display: none;
+    }
 }
-.mainCardBg {
-    position: absolute;
-    left: 0px;
-    top: 200px;
-    pointer-events: none;
-    transition: transform .3s ease;
-}
+
 .mainAbout {
     display: flex;
     align-items: center;
     margin: 100px 0;
+    @media (max-width: 992px) {
+        margin: 40px 0;
+    }
 }
 .mainAboutItems {
     position: relative;
@@ -63,6 +45,9 @@
     width: 50%;
     height: 580px;
     background-color: var(--color-black);
+    @media (max-width: 992px) {
+        display: none;
+    }
 }
 .mainAboutItemsWrapp {
     position: absolute;
@@ -82,4 +67,7 @@
 .mainAboutImg {
     width: 50%;
     height: auto;
+    @media (max-width: 992px) {
+        width: 100%;
+    }
 }

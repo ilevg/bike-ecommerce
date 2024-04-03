@@ -5,14 +5,6 @@ import styles from './DropdownField.module.scss'
 const DropdownField = ({ navLinks, renderChildren }) => {
     const [isOpenState, setIsOpenState] = useState({})
 
-    useEffect(() => {
-        const initialState = navLinks.reduce((acc, index) => {
-            acc[index] = false
-            return acc
-        }, {})
-        setIsOpenState(initialState)
-    }, [navLinks])
-
     const dropdownToggle = (index) => {
         setIsOpenState(prevState => ({
             ...prevState,
@@ -22,27 +14,29 @@ const DropdownField = ({ navLinks, renderChildren }) => {
 
     const renderSubcategory = (link, index) => {
         const { title, children } = link
+        const arrowIcon = isOpenState[index] ? 'ᐱ' : 'ᐯ'
+        const subcategoryActiveClassToggle = isOpenState[index] ? `${styles.navMobSubcategory} ${styles.subcategoryActive}` : styles.navMobSubcategory
+        const navMobOpenClassToggle = isOpenState[index] ? `${styles.navMobLinks}` : `${styles.navMobLinks} ${styles.navMobClose}`
+        const renderNavLinkSubcategory = children && children.length > 0 ? renderChildren(children) : renderChildren()
+        
         return (
             < li className={styles.navMobItem} key={index}>
                 <ul
-                    className={isOpenState[index] ? `${styles.navMobSubcategory} ${styles.subcategoryActive}` : styles.navMobSubcategory}
+                    className={subcategoryActiveClassToggle}
                     onClick={() => dropdownToggle(index)}
                     key={index}
                 >
                     <li>{title}</li>
-                    <li className={styles.navMobArrows}>{isOpenState[index] ? 'ᐱ' : 'ᐯ'}</li>
+                    <li className={styles.navMobArrows}>{arrowIcon}</li>
                 </ul>
-
                 {(
-                    <ul className={isOpenState[index] ? `${styles.navMobLinks} ${styles.navMobOpen}` : `${styles.navMobLinks} ${styles.navMobClose}`}>
-                        {children && children.length > 0 ? renderChildren(children) : renderChildren()}
+                    <ul className={navMobOpenClassToggle}>
+                        {renderNavLinkSubcategory}
                     </ul>
                 )}
-
             </li >
         )
     }
-
     return (
         <div>
             <ul className={styles.navMob}>

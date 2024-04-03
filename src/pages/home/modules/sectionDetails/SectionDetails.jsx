@@ -7,7 +7,7 @@ import classNames from 'classnames'
 
 import {detailsCardsData} from '../../data/data'
 import InfoCard from '../../components/infoCard/InfoCard'
-import SliderSimple from '../../components/sliderSimple/SliderSimple'
+import SliderSimple from '../../../../components/sliderSimple/SliderSimple'
 
 const SectionDetails = () => {
     return (

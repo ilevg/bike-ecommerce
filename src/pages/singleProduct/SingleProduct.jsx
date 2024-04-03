@@ -3,44 +3,44 @@ import LinkTag from '../../UI/linkTag/LinkTag';
 import SectionMain from './sectionMain/SectionMain';
 import styles from './SingleProduct.module.scss';
 import SectionSlider from './sectionSlider/SectionSlider';
-import { productBySlug } from './helpers/productBySlug';
+import { findItemBySlug } from '../../helpers/itemBySlug';
 import { useParams } from 'react-router-dom';
-import { ListproductsContext } from '../../context/index';
+import { SingleProductContext } from '../../context/index';
+import SectionParam from './sectionParam/SectionParam';
+import classNames from 'classnames';
+
+import { fetchProducts } from '../../services/apiService'
+const productsList = await fetchProducts()
 
 const SingleProduct = () => {
-
-    const { slug } = useParams()
-    const [product, setProduct] = useContext(ListproductsContext)
-    const productCategoryName = product.categories && product.categories[0].name
-    const productCategorySlug = product.categories && product.categories[0].slug
-
-    const productAttributes = product && product.attributes;
-    const findAttribute = (attrName) => {
-        const pro = productAttributes && productAttributes.filter(attr => attr['name'] === attrName)
-    }
-    findAttribute('Brand')
     
+    const [singleProduct, setSingleProduct] = useContext(SingleProductContext);
+    const { slug } = useParams()
+
+    const productCategoryName = singleProduct.categories && singleProduct.categories[0].name
+    const productCategorySlug = singleProduct.categories && singleProduct.categories[0].slug
+
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const fetchedProduct = await productBySlug({ slug });
-                setProduct(fetchedProduct);
+                const fetchedProduct = await findItemBySlug({ slug }, productsList);
+                setSingleProduct(fetchedProduct)
             } catch (error) {
                 console.error('Error fetching product: ', error);
             }
         };
         fetchProduct();
-    }, [slug, setProduct]);
+    }, [slug]);
 
-    
     return (
-        <div className='container'>
+        <div className={classNames('container', styles.product)}>
             <div className={styles.productHeaderLinks}>
                 <LinkTag to='/' text='Home / ' color='black' />
                 <LinkTag to={`/${productCategorySlug}`} text={`${productCategoryName} / `} color='black' />
-                <span className={styles.productName}>{product && product.name}</span>
+                <span className={styles.productName}>{singleProduct && singleProduct.name}</span>
             </div>
             <SectionMain />
+            <SectionParam />
             <SectionSlider />
         </div>
     );

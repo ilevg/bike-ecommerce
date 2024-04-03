@@ -1,39 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import classNames from 'classnames'
 import styles from './SectionBlogLinks.module.scss'
-import {blogPostsList} from './api/index'
-import SliderSimple from '../../components/sliderSimple/SliderSimple'
+import SliderSimple from '../../../../components/sliderSimple/SliderSimple'
 import SliderItem from '../../modules/sectionBlogLinks/components/sliderItem/SliderItem';
-
+import { useContext } from 'react';
+import { ListBlogPostContext } from '../../../../context';
 
 const SectionBlogLinks = () => {
+    const [posts] = useContext(ListBlogPostContext)
+    const cutsBlogPosts = posts.slice(0,3)
+
     return (
         <>
             <div className={styles.blogPosts}>
-                <div className={classNames(styles.blogPostsItems, styles.blogPostsItemsFirst)}>
-                    <div className={classNames(styles.blogPostsItem, styles.blogPostsItemFirst)}>
-                        <span className={styles.blogPostsDesc}>Extreme Mountain bike driving</span>
-                        <Link to='' className={styles.blogPostsLink}>Read more</Link>
-                    </div>
-                </div>
-
-                <div className={classNames(styles.blogPostsItemsSec, styles.blogPostsItems)}>
-                    <div className={classNames(styles.blogPostsItem, styles.blogPostsItemSec)}>
-                        <span className={styles.blogPostsDesc}>Bicycles for professionals</span>
-                        <Link to='' className={styles.blogPostsLink}>Read more</Link>
-                    </div>
-                </div>
-
-                <div className={classNames(styles.blogPostsItemsThird, styles.blogPostsItems)}>
-                    <div className={classNames(styles.blogPostsItem, styles.blogPostsItemThird)}>
-                        <span className={styles.blogPostsDesc}>A long road bike ride</span>
-                        <Link to='' className={styles.blogPostsLink}>Read more</Link>
-                    </div>
-                </div>
+                {
+                    cutsBlogPosts && cutsBlogPosts.map(item => (
+                        <div key={item.id} className={styles.blogPostsItems}>
+                            <div className={styles.blogPostsItem}>
+                                <span className={styles.blogPostsDesc}>{item.title.rendered}</span>
+                                <Link to={`http://localhost:3000/blog/${item.slug}`} className={styles.blogPostsLink}>Read more</Link>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
             <div className={styles.blogPostsSlider}>
-                <SliderSimple itemsList={blogPostsList} SliderItemComponent={SliderItem}/>
+                <SliderSimple itemsList={cutsBlogPosts} SliderItemComponent={SliderItem} />
             </div>
         </>
 

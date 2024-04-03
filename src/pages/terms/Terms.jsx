@@ -111,8 +111,8 @@ const Terms = () => {
                         <li>BIC (Bank Identifier Code): 044525974</li>
                     </ul>
                 </div>
-                <BrandCarousel />
             </div>
+            <BrandCarousel />
         </>
 
     )

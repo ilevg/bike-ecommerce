@@ -65,7 +65,7 @@ function SliderGalery( {imgList} ) {
     ]
   };
   return (
-    <div className="slider-container">
+    <div className="slider-cont">
       <Slider {...settings}>
         {
             imgList.map((img, index) => (
