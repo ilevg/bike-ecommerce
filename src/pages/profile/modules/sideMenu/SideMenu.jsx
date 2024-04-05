@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 import React, { useContext } from 'react';
-import { ActiveTabContext } from '../../../../context';
+import { ActiveProfileTabContext } from '../../../../context';
 import styles from './SideMenu.module.scss';
 
 const SideMenu = () => {
-    const [activeTab, setActiveTab] = useContext(ActiveTabContext);
+    const [activeTab, setActiveTab] = useContext(ActiveProfileTabContext);
 
     const getButtonClassName = (tabName) => classNames(styles.btn, {
         [styles.btnActive]: activeTab === tabName

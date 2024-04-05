@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import React from 'react'
 import Button from '../../../../UI/button/Button'
 import styles from './PasswordChange.module.scss'

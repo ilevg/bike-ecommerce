@@ -1,8 +1,8 @@
 import styles from './DropdownChildren.module.scss'
 import PriceRangeSlider from '../../../../components/priceRangeSlider/PriceRangeSlider'
 
-const DropdownChildren = (item) => (
-  item.value.map((child) => (
+const DropdownChildren = (item) => {
+  return item.value.map((child) => (
     child.value
       ?
       <li  className={styles.item} key={child.value}>
@@ -24,5 +24,5 @@ const DropdownChildren = (item) => (
           <span>{child}</span>
         </li>
   ))
-)
+  }
 export default DropdownChildren

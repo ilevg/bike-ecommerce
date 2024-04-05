@@ -6,10 +6,10 @@ import PersonalData from './modules/personalData/PersonalData'
 import SideMenu from './modules/sideMenu/SideMenu'
 import PasswordChange from './modules/passwordChange/PasswordChange'
 import OrderHistory from './modules/orderHistory/OrderHistory'
-import { ActiveTabContext } from '../../context'
+import { ActiveProfileTabContext } from '../../context'
 
 const Profile = () => {
-    const [activeTab] = useContext(ActiveTabContext)
+    const [activeTab] = useContext(ActiveProfileTabContext)
     const renderContent = () => {
         switch (activeTab) {
             case 'history':

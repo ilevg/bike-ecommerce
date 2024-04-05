@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext, useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
-// import { v4 as uuidv4 } from 'uuid';
 import PagesTitle from '../../components/pagesTitle/PagesTitle'
 import ProductCard from '../../components/productCard/ProductCard'
 import Select from '../../components/select/Select'
@@ -11,37 +10,61 @@ import classNames from 'classnames'
 import titleBgImage from '../../assets/img/titlesBg/about.png'
 import { ListproductsContext } from '../../context'
 import { itemsForFilterField } from './data'
+import { sortArrByPriceAsc, sortArrByPriceDesc, sortArrByDateDesc } from '../../helpers/sortArr'
 
 const PAGE_SIZE = 12
 
 const Catalog = () => {
-  // const uniqueKey = uuidv4();
-
-  const location = useLocation()
   const [catalogType, setCatalogType] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
   const [activePage, setActivePage] = useState(1)
+  const [dropdownField, setDropdownField] = useState([])
   const [products] = useContext(ListproductsContext);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const {pathname} = useLocation()
 
-  useEffect(() => {
-    const path = location.pathname;
-    const catalogTypeFormated = path.substring(1).charAt(0).toUpperCase() + path.substring(2)
-    setCatalogType(catalogTypeFormated);
-
-    const fetchAndSetProducts = () => {
-      let filtered = catalogTypeFormated === 'Trade-in'
-        ?
-        products.slice()
-        :
-        products.slice().filter(product =>  product.categories[0] && product.categories[0].name === catalogTypeFormated)
-      setFilteredProducts(filtered)
+  const onChangeSortingProducts = (optionValue) => {
+    let sortFunction
+    switch (optionValue) {
+      case 'descPrice':
+        sortFunction = sortArrByPriceAsc
+        break;
+      case 'ascPrice':
+        sortFunction = sortArrByPriceDesc
+        break;
+      default:
+        sortFunction = sortArrByDateDesc
+        break;
     }
+    setFilteredProducts([...filteredProducts].sort(sortFunction))
+  }
+  
+  const getCatalogTypeFormated = () => pathname.substring(1).charAt(0).toUpperCase() + pathname.substring(2)
 
-    fetchAndSetProducts()
+  const filterProduct = (products, catalogTypeFormated) => {
+     return catalogTypeFormated === 'Trade-in'
+      ? products.slice()
+      : products.slice().filter(product => product.categories[0] && product.categories[0].name === catalogTypeFormated)
+  }
+  
+  useEffect(() => {
+    const catalogTypeFormated = getCatalogTypeFormated()
+    setCatalogType(catalogTypeFormated);
+    const filtered = filterProduct(products, catalogTypeFormated)
+    setFilteredProducts(filtered)
     setCurrentPage(1)
     setActivePage(1)
-  }, [location.pathname, products])
+  }, [pathname, products])
+
+
+  useEffect(() => {
+    const fetchDropdownField = async () => {
+      const itemsList = await itemsForFilterField(filteredProducts);
+      catalogType !== 'Bicycles' && itemsList.shift()
+      setDropdownField(itemsList);
+    }
+    fetchDropdownField()
+  }, [filteredProducts, catalogType])
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber)
@@ -51,9 +74,8 @@ const Catalog = () => {
   const pagesLength = Math.ceil(filteredProducts.length / PAGE_SIZE)
   const startIndex = (currentPage - 1) * PAGE_SIZE
   const endIndex = startIndex + PAGE_SIZE
-  const currentList = filteredProducts.slice(startIndex, endIndex)
-
-
+  const currentProducts = filteredProducts.slice(startIndex, endIndex)
+  
   return (
     <div>
       <PagesTitle img={titleBgImage} pageName={catalogType} />
@@ -63,14 +85,14 @@ const Catalog = () => {
             <span>Only in stock</span>
             <input className={styles.catalogInput} type="checkbox" name="stock" id="stock" />
           </div>
-          <Select />
+          <Select callback={onChangeSortingProducts} pathname={pathname} />
         </div>
 
         <div className={styles.catalog}>
 
           <div className={styles.catalogFilters}>
             {
-              itemsForFilterField.map((item, index) => (
+              dropdownField.length && dropdownField.map((item, index) => (
                 <FilterDropdownField
                   key={index}
                   title={item.title}
@@ -82,7 +104,7 @@ const Catalog = () => {
 
           <div className={styles.catalogProductsCont}>
             {
-              currentList.map(product => (
+              currentProducts.map(product => (
                 <div key={product.id} className={styles.catalogProduct}>
                   <ProductCard product={product} />
                 </div>

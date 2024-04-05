@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { ActiveAuthComponentProvider, ListproductsProvider, SingleProductProvider, ActiveTabProvider, ListBlogPostProvider } from './context'
+import { ActiveAuthComponentProvider, ListproductsProvider, SingleProductProvider, ActiveProfileTabProvider, ListBlogPostProvider } from './context'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import AppWrapper from './components/AppWrapper';
@@ -9,7 +9,7 @@ import './styles/index.scss'
 function App() {
   return (
     <ActiveAuthComponentProvider>
-      <ActiveTabProvider>
+      <ActiveProfileTabProvider>
         <ListBlogPostProvider>
           <ListproductsProvider>
             <SingleProductProvider>
@@ -23,7 +23,7 @@ function App() {
             </SingleProductProvider>
           </ListproductsProvider>
         </ListBlogPostProvider>
-      </ActiveTabProvider>
+      </ActiveProfileTabProvider>
     </ActiveAuthComponentProvider>
   );
 }

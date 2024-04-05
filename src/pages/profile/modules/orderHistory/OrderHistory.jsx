@@ -5,19 +5,15 @@ import { useState } from 'react'
 import classNames from 'classnames'
 
 const OrderHistory = () => {
-
     const [isOpen, setIsOpen] = useState(false)
-
     const productInfoOpen = () => {
         setIsOpen(!isOpen)
     }
-
     const arrowIcon = isOpen ? 'ᐱ' : 'ᐯ'
 
     return (
         <div className={styles.container}>
             <h3 className={styles.subtitle}>order history</h3>
-
             <div className={styles.table}>
                 <div className={styles.tableHeader}>
                     <span>Date</span>
@@ -32,7 +28,6 @@ const OrderHistory = () => {
                     <span className={styles.orderStatus}>New order</span>
                     <span >{arrowIcon}</span>
                 </div>
-
                 <div colSpan={5} className={isOpen ? styles.productOpen : styles.productClose}>
                     <div >
                         <div className={styles.product}>
@@ -46,12 +41,7 @@ const OrderHistory = () => {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-                <div className={ classNames(styles.productCont,styles.productContSec)} onClick={productInfoOpen}>
+                <div className={classNames(styles.productCont, styles.productContSec)} onClick={productInfoOpen}>
                     <span>22.01.2023</span>
                     <span>3243243253</span>
                     <span>4555 $</span>
@@ -102,5 +92,4 @@ const OrderHistory = () => {
         </div>
     )
 }
-
 export default OrderHistory

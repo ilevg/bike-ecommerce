@@ -2,12 +2,12 @@ import { createContext, useEffect, useMemo, useState } from "react";
 import { fetchProducts } from "../services/apiService";
 import { fetchData } from '../services/apiService'
 
-const blogPostsList = await fetchData('/wp-json/wp/v2/posts')
-
-// export const AuthContent = createContext(null)
-
-// products list
+export const AuthContent = createContext(null)
 export const ListproductsContext = createContext();
+export const ListBlogPostContext = createContext();
+export const SingleProductContext = createContext();
+export const ActiveProfileTabContext = createContext([])
+export const ActiveAuthComponentContext = createContext([])
 
 export const ListproductsProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
@@ -23,16 +23,12 @@ export const ListproductsProvider = ({ children }) => {
     );
 };
 
-// posts list
-export const ListBlogPostContext = createContext();
-
 export const ListBlogPostProvider = ({ children }) => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         fetchData('/wp-json/wp/v2/posts')
             .then(postList => setPosts(postList))
     }, []);
-
     const memoizedProducts = useMemo(() => posts, [posts]);
     return (
         <ListBlogPostContext.Provider value={[memoizedProducts, setPosts]}>
@@ -41,8 +37,6 @@ export const ListBlogPostProvider = ({ children }) => {
     );
 };
 
-// singleProduct
-export const SingleProductContext = createContext();
 export const SingleProductProvider = ({ children }) => {
     const [singleProduct, setSingleProduct] = useState({});
     return (
@@ -53,22 +47,17 @@ export const SingleProductProvider = ({ children }) => {
 };
 
 // active tab in profile page sidebar
-export const ActiveTabContext = createContext([])
-export const ActiveTabProvider = ({ children }) => {
+export const ActiveProfileTabProvider = ({ children }) => {
     const [activeTab, setActiveTab] = useState('history')
-
     return (
-        <ActiveTabContext.Provider value={[activeTab, setActiveTab]}>
+        <ActiveProfileTabContext.Provider value={[activeTab, setActiveTab]}>
             {children}
-        </ActiveTabContext.Provider>
+        </ActiveProfileTabContext.Provider>
     )
 }
 
-// active auth page component
-export const ActiveAuthComponentContext = createContext([])
 export const ActiveAuthComponentProvider = ({ children }) => {
     const [activeAuthComponent, setActiveAuthComponent] = useState('login')
-
     return (
         <ActiveAuthComponentContext.Provider value={[activeAuthComponent, setActiveAuthComponent]}>
             {children}

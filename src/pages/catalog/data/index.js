@@ -1,74 +1,68 @@
-import { fetchProducts } from '../../../services/apiService'
+const getProductFilters = async (productsList, attributeName) => {
+  const productsBrand = productsList.map(product => {
+    const findAttr = product.attributes.find(attr => attr.name === attributeName)
+    const attrValue = findAttr && findAttr.options[0]
 
-const productsForFilterField = await fetchProducts()
+    return attrValue
+  })
 
-export const getProductFilters = async (attributeName) => {
-    const productsBrand = productsForFilterField.map(product => {
-        const findAttr = product.attributes.find(attr => attr.name === attributeName)
-        const attrValue = findAttr && findAttr.options[0]
+  const uniqueAttrValues = Array.from(new Set(productsBrand))
 
-        return attrValue
-    })
-
-    const uniqueAttrValues = Array.from(new Set(productsBrand))
-
-    const filteredAttrValues = uniqueAttrValues.map(value => {
-        return {
-            value: value,
-            count: productsBrand.filter(item => item === value).length
-        }
-    })
-
-    return filteredAttrValues
+  const filteredAttrValues = uniqueAttrValues.map(value => {
+    return {
+      value: value,
+      count: productsBrand.filter(item => item === value).length
+    }
+  })
+  return filteredAttrValues
 }
 
-export const getCategories = () => {
-    const categories = productsForFilterField.flatMap(product => {
-        const mainCategory = product.categories[0]?.name;
-        const subCategory = product.categories[1]?.name;
+const getCategories = (productsList) => {
+    const categories = productsList.flatMap(product => {
+    const subCategory = product.categories[1]?.name;
 
-        return [mainCategory, subCategory].filter(Boolean)
-    })
-    return Array.from(new Set(categories))
+    return [subCategory].filter(Boolean)
+  })
+  return Array.from(new Set(categories))
 }
 
-export const maxPrice = () => {
-    let allPrices = []
+const maxPrice = (productsList) => {
+  let allPrices = []
 
-    productsForFilterField.map(product => {
-        allPrices.push(product.price)
-    })
+  productsList.map(product => {
+    allPrices.push(product.price)
+  })
 
-    return [Math.max(...allPrices)]
-} 
+  return [Math.max(...allPrices)]
+}
 
-// Data
+export const itemsForFilterField = async (productsList) => {
+  const productCategories = getCategories(productsList)
+  const productPriceValues = maxPrice(productsList)
+  const productBrands = await getProductFilters(productsList, 'Brand')
+  const productCountry = await getProductFilters(productsList, 'Country')
+  const productYear = await getProductFilters(productsList, 'Year')
 
-const productCategories = getCategories()
-const productPriceValues = maxPrice()
-const productBrands = await getProductFilters('Brand')
-const productCountry = await getProductFilters('Country')
-const productYear = await getProductFilters('Year')
-
-export const itemsForFilterField = [
-  {
-    title: 'Products Categories',
-    value: productCategories
-  },
-  {
-    title: 'Brand',
-    value: productBrands
-  },
-  {
-    title: 'Price',
-    value: productPriceValues
-  },
-  {
-    title: 'Country',
-    value: productCountry
-  },
-  {
-    title: 'Year',
-    value: productYear
-  },
-]
+  return [
+    {
+      title: 'Bicycles Types',
+      value: productCategories
+    },
+    {
+      title: 'Brand',
+      value: productBrands
+    },
+    {
+      title: 'Price',
+      value: productPriceValues
+    },
+    {
+      title: 'Country',
+      value: productCountry
+    },
+    {
+      title: 'Year',
+      value: productYear
+    },
+  ]
+}

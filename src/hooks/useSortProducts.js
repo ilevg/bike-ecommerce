@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ListproductsContext } from '../context'
-import { sortArrByDateADesc } from '../helpers/sortArr'
+import { sortArrByDateDesc } from '../helpers/sortArr'
 
 export const useSortProducts = (categoryName, sliceNumbers) => {
     const [products, setProducts] = useContext(ListproductsContext)
@@ -16,6 +16,6 @@ export const useSortProducts = (categoryName, sliceNumbers) => {
             newListEquip.push(product)
         })
 
-    const sortEquipList = newListEquip.slice(0, +sliceNumbers).sort(sortArrByDateADesc)
+    const sortEquipList = newListEquip.slice(0, +sliceNumbers).sort(sortArrByDateDesc)
     return sortEquipList
 }
